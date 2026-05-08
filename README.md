@@ -35,5 +35,5 @@ A Windows PowerShell “walk‑to‑find” Wi‑Fi AP locator that forces fresh
    ```powershell
    git clone https://github.com/<yourname>/wifi-ap-hunter.git
    cd wifi-ap-hunter
-   pwsh -executionpolicy bypass -file .\wifi-ap-hunter
+   pwsh -executionpolicy bypass -file .\wifi-ap-hunter.ps1
    
