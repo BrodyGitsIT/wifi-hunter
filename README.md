@@ -1,8 +1,9 @@
-# Wi‑Fi AP Hunter 📡
-
+# Wi‑Fi AP Hunter 
 A Windows PowerShell “walk‑to‑find” Wi‑Fi AP locator that forces fresh scans, groups radios by AP mask, and shows live signal graphs + trend HUD to help you physically locate access points faster.
 
 > Built for field work: walk slowly, watch the trend, and follow the strongest BSSID (or grouped AP mask).
+> This script legitimately saved me hours, I tried finding a couple old APs in drop cieling just using a netsh wlan command that showed signal strength, however netsh uses caches files and doesnt update enough so I could never find my AP.
+> This script uses the WLAN API that Windows provides directly, and you will know you are right under your AP when Signal Strength hits 100%!
 
 ---
 
@@ -23,7 +24,7 @@ A Windows PowerShell “walk‑to‑find” Wi‑Fi AP locator that forces fresh
 ## Requirements
 
 - **Windows 10/11**
-- **PowerShell 5.1+** (Windows PowerShell)  
+- **PowerShell 7+** (Windows PowerShell)  
   > Works great in Windows Terminal too.
 - A Wi‑Fi adapter that supports scanning
 
@@ -33,7 +34,7 @@ A Windows PowerShell “walk‑to‑find” Wi‑Fi AP locator that forces fresh
 
 1. Clone the repo:
    ```powershell
-   git clone https://github.com/<yourname>/wifi-ap-hunter.git
+   git clone https://github.com/BrodyGitsIT/wifi-ap-hunter.git
    cd wifi-ap-hunter
    pwsh -executionpolicy bypass -file .\wifi-ap-hunter.ps1
    
